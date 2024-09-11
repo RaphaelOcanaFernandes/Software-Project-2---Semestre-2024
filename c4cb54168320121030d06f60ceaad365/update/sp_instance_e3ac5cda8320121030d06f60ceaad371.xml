@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">9fac5cda8320121030d06f60ceaad36d</sp_column>
+        <sp_widget display_value="Image">b7f40bbd8360121030d06f60ceaad377</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 23:01:51</sys_created_on>
+        <sys_id>e3ac5cda8320121030d06f60ceaad371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Software Product S2 2024" source="x_425133_impacta">c4cb54168320121030d06f60ceaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Software Product S2 2024">c4cb54168320121030d06f60ceaad365</sys_scope>
+        <sys_update_name>sp_instance_e3ac5cda8320121030d06f60ceaad371</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 23:01:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3ac5cda8320121030d06f60ceaad371"/>
+</record_update>

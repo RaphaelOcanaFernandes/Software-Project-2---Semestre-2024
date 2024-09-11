@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_425133_impacta.ProjectUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ProjectUtils</name>
+        <script><![CDATA[var ProjectUtils = Class.create();
+ProjectUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    
+    getAddressByCEP: function() {
+        var cep = this.getParameter('cep');
+        var response = this.callCorreiosAPI(cep);
+        
+        if (response) {
+            // Retorna o endereço completo
+            return response.logradouro + ', ' + response.bairro + ', ' + response.localidade + ' - ' + response.uf;
+        } else {
+            return '';
+        }
+    },
+
+    // Método para chamar a API dos Correios
+    callCorreiosAPI: function(cep) {
+        try {
+            // URL da API de exemplo (substituir pela correta se necessário)
+            var url = 'https://viacep.com.br/ws/' + cep + '/json/';
+            
+            var request = new sn_ws.RESTMessageV2(); // Utiliza a classe nativa RESTMessageV2
+            request.setHttpMethod('GET');
+            request.setEndpoint(url);
+
+            var response = request.execute(); // Executa a chamada
+            var responseBody = response.getBody(); // Obtém o corpo da resposta
+            var httpStatus = response.getStatusCode(); // Código de status HTTP
+            
+            if (httpStatus === 200) { // Verifica se a requisição foi bem-sucedida
+                var jsonResponse = JSON.parse(responseBody); // Converte o corpo para JSON
+                if (jsonResponse.erro) {
+                    return null; // CEP não encontrado
+                }
+                return jsonResponse; // Retorna o JSON com o endereço
+            } else {
+                gs.error('Erro ao consultar API dos Correios: ' + httpStatus);
+                return null;
+            }
+        } catch (ex) {
+            gs.error('Exception ao chamar API dos Correios: ' + ex.getMessage());
+            return null;
+        }
+    },
+
+    type: 'ProjectUtils'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 23:32:46</sys_created_on>
+        <sys_id>f8232cd283e0121030d06f60ceaad32b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ProjectUtils</sys_name>
+        <sys_package display_value="Software Product S2 2024" source="x_425133_impacta">c4cb54168320121030d06f60ceaad365</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Software Product S2 2024">c4cb54168320121030d06f60ceaad365</sys_scope>
+        <sys_update_name>sys_script_include_f8232cd283e0121030d06f60ceaad32b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 23:36:25</sys_updated_on>
+    </sys_script_include>
+</record_update>
