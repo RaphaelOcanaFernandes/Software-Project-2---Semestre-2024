@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Prioridade">228f67f68301121030d06f60ceaad342</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 00:15:10</sys_created_on>
+        <sys_id>1950f33a8301121030d06f60ceaad374</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>4 - Low</sys_name>
+        <sys_package display_value="Software Product S2 2024" source="x_425133_impacta">c4cb54168320121030d06f60ceaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Software Product S2 2024">c4cb54168320121030d06f60ceaad365</sys_scope>
+        <sys_update_name>question_choice_1950f33a8301121030d06f60ceaad374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 00:15:40</sys_updated_on>
+        <text>4 - Low</text>
+        <value>4</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=1950f33a8301121030d06f60ceaad374"/>
+</record_update>
