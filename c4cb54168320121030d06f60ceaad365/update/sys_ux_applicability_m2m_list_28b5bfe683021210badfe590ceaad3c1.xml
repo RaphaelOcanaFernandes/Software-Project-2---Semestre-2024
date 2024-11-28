@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for app ac4---impacta">54b5bfe683021210badfe590ceaad38b</applicability>
+        <list display_value="Unassigned">64b5bfe683021210badfe590ceaad3bf</list>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-26 23:02:40</sys_created_on>
+        <sys_id>28b5bfe683021210badfe590ceaad3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Software Product S2 2024" source="x_425133_impacta">c4cb54168320121030d06f60ceaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Software Product S2 2024">c4cb54168320121030d06f60ceaad365</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_28b5bfe683021210badfe590ceaad3c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-26 23:02:40</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>
